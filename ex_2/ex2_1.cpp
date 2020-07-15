@@ -1,0 +1,20 @@
+//求三个整数中的最大值。
+#include<stdio.h>
+main()
+{
+	int a,b,c,max;
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b)
+		if(b>c)
+			printf("max=%d",a);
+		else
+			if(a>c)
+				printf("max=%d",a);
+			else
+			    printf("max=%d",c);
+    else
+		if(b>c)
+			printf("max=%d",b);
+		else
+			printf("max=%d",c);
+}
